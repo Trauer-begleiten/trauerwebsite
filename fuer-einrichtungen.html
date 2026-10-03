@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Für Einrichtungen & Bestattungsunternehmen – Susanne Schnepel</title>
   <meta name="description" content="Angebote rund um Sterben, Abschied, Trauer und Demenz für Pflegeeinrichtungen, Hospize, ambulante Dienste und Bestattungsunternehmen.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Susanne Schnepel – Sterbe- und Trauerbegleitung · Trauerreden">
+  <meta property="og:title" content="Für Einrichtungen & Bestattungsunternehmen – Susanne Schnepel">
+  <meta property="og:description" content="Angebote rund um Sterben, Abschied, Trauer und Demenz für Pflegeeinrichtungen, Hospize, ambulante Dienste und Bestattungsunternehmen.">
+  <meta property="og:image" content="https://trauer-begleiten.github.io/trauerwebsite/bilder/vorschau-teilen.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://trauer-begleiten.github.io/trauerwebsite/fuer-einrichtungen.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="bilder/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +24,8 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="index.html">Susanne Schnepel<small>Sterbe- und Trauerbegleitung · Trauerreden</small></a>
-    <nav>
+    <button class="menu-knopf" type="button" aria-expanded="false" aria-controls="menue" hidden>☰ Menü</button>
+    <nav id="menue">
       <a href="index.html">Start</a>
       <a href="trauer-und-sterbebegleitung.html">Begleitung</a>
       <a href="trauerrednerin.html">Trauerreden</a>
@@ -127,6 +140,27 @@
     <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var knopf = document.querySelector('.menu-knopf');
+    var menue = document.getElementById('menue');
+    knopf.hidden = false;
+    document.documentElement.classList.add('js');
+    knopf.addEventListener('click', function () {
+      var offen = menue.classList.toggle('offen');
+      knopf.setAttribute('aria-expanded', offen);
+      knopf.textContent = offen ? '✕ Schließen' : '☰ Menü';
+    });
+    menue.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        menue.classList.remove('offen');
+        knopf.setAttribute('aria-expanded', false);
+        knopf.textContent = '☰ Menü';
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>

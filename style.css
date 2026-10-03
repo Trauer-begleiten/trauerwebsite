@@ -123,3 +123,30 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 .hinweis { font-size: 0.9rem; color: var(--muted); }
 .wrap.text { max-width: 960px; }
 .wrap.text > * { max-width: 720px; }
+
+/* Startseite: Foto neben der Begrüßung */
+.hero-grid { display: grid; gap: 28px; justify-items: center; }
+.hero-foto { width: 170px; height: 170px; object-fit: cover; object-position: 50% 15%; border-radius: 50%; border: 4px solid var(--card); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+@media (min-width: 860px) {
+  .hero { text-align: left; }
+  .hero-grid { grid-template-columns: 1fr 340px; gap: 56px; align-items: center; justify-items: stretch; }
+  .hero-foto { order: 2; width: 340px; height: auto; border-radius: 14px; border: 0; }
+  .hero .hero-text p { margin-left: 0; }
+  .hero .buttons { justify-content: flex-start; }
+}
+
+/* Menü-Knopf am Handy */
+.menu-knopf {
+  display: none; font: inherit; font-size: 0.95rem; color: var(--accent-dark);
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; cursor: pointer;
+}
+@media (max-width: 759px) {
+  .js .menu-knopf { display: inline-block; }
+  .js nav { display: none; width: 100%; flex-direction: column; gap: 0; padding-top: 8px; }
+  .js nav.offen { display: flex; }
+  .js nav a { padding: 10px 0; border-top: 1px solid var(--line); font-size: 1.05rem; }
+}
+@media (max-width: 759px) {
+  header.top .wrap { flex-wrap: wrap; }
+  .js .brand { flex: 1 1 0; min-width: 0; }
+}
