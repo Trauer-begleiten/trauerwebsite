@@ -1,5 +1,184 @@
 <!doctype html>
 <html lang="de">
-<head><meta charset="utf-8"><title>Trauerwebsite</title></head>
-<body><h1>Meine Website entsteht</h1></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Susanne Schnepel – Sterbe- und Trauerbegleitung</title>
+  <meta name="description" content="Susanne Schnepel – Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin. Liebevolle Begleiter für Trauernde und Angehörige.">
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --bg-soft: #f1ebe1;
+      --card: #ffffff;
+      --text: #3b3a36;
+      --muted: #6f6a60;
+      --accent: #7a8b6f;
+      --accent-dark: #5c6b53;
+      --line: #e3dccf;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    a { color: var(--accent-dark); }
+
+    header.top {
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+    }
+    header.top .wrap {
+      display: flex; flex-wrap: wrap; gap: 8px 24px;
+      align-items: center; justify-content: space-between;
+      padding-top: 16px; padding-bottom: 16px;
+    }
+    .brand { font-family: var(--serif); font-size: 1.25rem; text-decoration: none; color: var(--text); }
+    nav a { margin-right: 18px; text-decoration: none; color: var(--muted); font-size: 0.95rem; }
+    nav a:last-child { margin-right: 0; }
+    nav a:hover { color: var(--accent-dark); }
+
+    .hero { padding: 72px 0 64px; text-align: center; }
+    .hero h1 {
+      font-family: var(--serif); font-weight: normal;
+      font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.2; margin: 0 0 16px;
+    }
+    .hero p { max-width: 620px; margin: 0 auto 28px; color: var(--muted); }
+    .button {
+      display: inline-block; padding: 12px 26px; border-radius: 999px;
+      background: var(--accent); color: #fff; text-decoration: none;
+    }
+    .button:hover { background: var(--accent-dark); }
+
+    section { padding: 56px 0; }
+    section.soft { background: var(--bg-soft); }
+    h2 { font-family: var(--serif); font-weight: normal; font-size: 1.9rem; margin: 0 0 20px; }
+    .lead { max-width: 680px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 28px 24px; display: flex; flex-direction: column;
+    }
+    .badge {
+      align-self: flex-start; font-size: 0.8rem; letter-spacing: 0.04em;
+      background: var(--bg-soft); color: var(--accent-dark);
+      padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+    }
+    .card h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-height: 1.3; margin: 0 0 4px; }
+    .card .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 14px; }
+    .card p { margin: 0 0 12px; }
+    .card .for { margin-top: auto; font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+
+    blockquote {
+      font-family: var(--serif); font-size: 1.3rem; font-style: italic;
+      max-width: 640px; margin: 0 auto; text-align: center; color: var(--accent-dark);
+    }
+
+    footer { border-top: 1px solid var(--line); padding: 32px 0; font-size: 0.9rem; color: var(--muted); }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  </style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Susanne Schnepel</a>
+    <nav>
+      <a href="#begleiter">Begleiter</a>
+      <a href="#ueber-mich">Über mich</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Die Liebe bleibt.<br>Die Liebe geht mit.</h1>
+      <p>Sterbe- und Trauerbegleitung mit Herz – für Menschen, die Abschied nehmen,
+         und für alle, die sie dabei begleiten.</p>
+      <a class="button" href="#begleiter">Zu den Begleitern</a>
+    </div>
+  </div>
+
+  <section class="soft" id="begleiter">
+    <div class="wrap">
+      <h2>Meine Begleiter</h2>
+      <p class="lead">Drei Begleiter für schwere Zeiten – liebevoll geschrieben, fachlich durchgesehen
+        und zum Lesen, Innehalten und Hineinschreiben gedacht. Sie erscheinen in Kürze.</p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="badge">Erscheint bald</span>
+          <h3>Begleiter durch die Zeit der Trauer</h3>
+          <p class="sub">Zwölf Wegorte für schwere und leise Tage</p>
+          <p>Ein geschützter Raum für Tränen und Erinnerungen, für Fragen ohne Antwort,
+             für Sehnsucht, Stille und vorsichtige Lichtblicke. Sie müssen nichts leisten –
+             für heute genügt der nächste kleine Schritt.</p>
+          <p class="for">Für Menschen, die einen geliebten Menschen verloren haben.</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Erscheint bald</span>
+          <h3>Die letzten Wochen und Tage</h3>
+          <p class="sub">Eine liebevolle Hilfe für Angehörige in der Zeit des Sterbens</p>
+          <p>Verständlich erklärt, welche Veränderungen in der letzten Lebensphase möglich sind
+             und wie Sie Ihren geliebten Menschen begleiten können. Sie müssen nicht alles wissen
+             und nicht alles richtig machen.</p>
+          <p class="for">Für Angehörige, die einen sterbenden Menschen begleiten.</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Erscheint bald</span>
+          <h3>Der Mensch bleibt</h3>
+          <p class="sub">Wegbegleiter und Arbeitsbuch für Angehörige von Menschen mit Demenz</p>
+          <p>Erinnerungen können verblassen, Worte können fehlen. Das Bedürfnis nach Liebe,
+             Würde, Sicherheit und Zugehörigkeit bleibt. Orientierung, praktische Ideen
+             und Raum für Ihre eigenen Erfahrungen.</p>
+          <p class="for">Für Angehörige von Menschen mit Demenz.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ueber-mich">
+    <div class="wrap">
+      <h2>Hallo, ich bin Susanne</h2>
+      <div class="lead">
+        <p>Ich bin Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin.
+           Mit viel Herz begleite ich Menschen auf ihrem letzten Weg und stehe ihren
+           Angehörigen in der Zeit des Abschieds zur Seite.</p>
+        <p>Durch meine Arbeit mit älteren, schwer erkrankten und demenziell veränderten
+           Menschen weiß ich: Es braucht nicht immer viele Worte. Manchmal schenken eine
+           haltende Hand, vertraute Musik, ein kleines Ritual oder stilles Dasein die
+           größte Geborgenheit.</p>
+        <p>Mein Herzenswunsch ist es, Menschen einen liebevollen und würdevollen Abschied
+           zu ermöglichen und Angehörige in dieser besonderen Zeit nicht allein zu lassen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <blockquote>Sie müssen nicht immer stark sein. Sie müssen Ihre Trauer nicht erklären.
+        Sie müssen diesen Weg nicht allein gehen.</blockquote>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Susanne Schnepel · Sterbe- und Trauerbegleitung</span>
+    <span><a href="impressum.html">Impressum &amp; Datenschutz</a></span>
+  </div>
+</footer>
+
+</body>
 </html>
