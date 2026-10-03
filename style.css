@@ -121,3 +121,5 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 .rede { font-family: var(--serif); background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; max-width: 720px; }
 .rede p { margin: 0 0 14px; }
 .hinweis { font-size: 0.9rem; color: var(--muted); }
+.wrap.text { max-width: 960px; }
+.wrap.text > * { max-width: 720px; }
