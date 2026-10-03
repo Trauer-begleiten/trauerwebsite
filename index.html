@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Susanne Schnepel – Sterbe- und Trauerbegleitung</title>
-  <meta name="description" content="Susanne Schnepel – Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin. Liebevolle Begleiter für Trauernde und Angehörige.">
+  <title>Susanne Schnepel – Trauerrednerin, Sterbe- und Trauerbegleitung in Moringen</title>
+  <meta name="description" content="Susanne Schnepel – Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin. Sterbebegleitung, Trauerbegleitung, persönliche Trauerreden und demenzfreundliche Abschiede in Moringen.">
   <style>
     :root {
       --bg: #faf7f2;
@@ -88,6 +88,22 @@
       .about { grid-template-columns: 320px 1fr; gap: 48px; }
     }
 
+    .eyebrow { font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-dark); margin: 0 0 16px; }
+    .hero .strong { color: var(--text); font-family: var(--serif); font-size: 1.3rem; font-style: italic; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .button.light { background: transparent; color: var(--accent-dark); border: 1px solid var(--accent); }
+    .button.light:hover { background: var(--card); }
+
+    @media (min-width: 760px) { .cards.zwei { grid-template-columns: 1fr 1fr; } }
+
+    .stimmen { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
+    .stimme { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; }
+    .stimme p { margin: 0 0 14px; font-style: italic; }
+    .stimme figcaption { font-size: 0.9rem; color: var(--muted); }
+
+    .kontakt p { margin: 0 0 8px; }
+    .kontakt .tel { font-size: 1.3rem; font-family: var(--serif); text-decoration: none; }
+
     footer { border-top: 1px solid var(--line); padding: 32px 0; font-size: 0.9rem; color: var(--muted); }
     footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
   </style>
@@ -98,8 +114,10 @@
   <div class="wrap">
     <a class="brand" href="#">Susanne Schnepel</a>
     <nav>
-      <a href="#begleiter">Begleiter</a>
+      <a href="#begleitung">Begleitung</a>
       <a href="#ueber-mich">Über mich</a>
+      <a href="#begleiter">Begleiter</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </div>
 </header>
@@ -107,14 +125,90 @@
 <main>
   <div class="hero">
     <div class="wrap">
-      <h1>Die Liebe bleibt.<br>Die Liebe geht mit.</h1>
-      <p>Sterbe- und Trauerbegleitung mit Herz – für Menschen, die Abschied nehmen,
-         und für alle, die sie dabei begleiten.</p>
-      <a class="button" href="#begleiter">Zu den Begleitern</a>
+      <p class="eyebrow">Trauerrednerin · Sterbe- und Trauerbegleiterin in Moringen</p>
+      <h1>Es gibt Zeiten im Leben, in denen nichts mehr ist wie vorher.</h1>
+      <p>Wenn ein geliebter Mensch stirbt oder das Leben sich durch eine schwere Diagnose verändert,
+         geraten Gefühle und der Alltag oft aus dem Gleichgewicht.</p>
+      <p class="strong">Sie müssen diesen Weg nicht allein gehen.</p>
+      <div class="buttons">
+        <a class="button" href="#begleitung">Meine Begleitung</a>
+        <a class="button light" href="#kontakt">Kontakt</a>
+      </div>
     </div>
   </div>
 
-  <section class="soft" id="begleiter">
+  <section class="soft" id="begleitung">
+    <div class="wrap">
+      <h2>Meine Begleitung</h2>
+      <p class="lead">Ich begleite Menschen und ihre Angehörigen mit Ruhe, Zeit, Wertschätzung und einem
+        offenen Herzen – in der Sterbebegleitung, in der Trauer und bei einem persönlichen Abschied.</p>
+
+      <div class="cards zwei">
+        <article class="card">
+          <h3>Sterbebegleitung</h3>
+          <p class="sub">Da sein, zuhören und Halt schenken in der letzten Lebensphase.</p>
+          <p>In der Zeit des Abschieds begleite ich Sterbende und ihre Angehörigen mit Achtsamkeit,
+             Ruhe und menschlicher Nähe.</p>
+        </article>
+
+        <article class="card">
+          <h3>Trauerbegleitung</h3>
+          <p class="sub">Einzelgespräche, Orientierung und liebevolle Unterstützung auf dem Weg durch die Trauer.</p>
+          <p>Auch nach dem Verlust bin ich da – mit Zeit für Gespräche, Orientierung und einem
+             geschützten Raum für Ihre Trauer.</p>
+        </article>
+
+        <article class="card">
+          <h3>Trauerreden, die von Herzen kommen</h3>
+          <p class="sub">Persönliche und würdevolle Abschiedsreden, die das Leben eines Menschen in den Mittelpunkt stellen.</p>
+          <p>In einem persönlichen Gespräch erzählen Sie mir von dem Menschen, den Sie verabschieden.
+             Ich höre zu – mit Zeit, Ruhe und einem offenen Ohr. Aus Ihren Erinnerungen entsteht eine
+             persönliche Trauerrede, die das Leben und die Einzigartigkeit dieses Menschen in den
+             Mittelpunkt stellt und einen würdevollen Abschied ermöglicht.</p>
+        </article>
+
+        <article class="card">
+          <h3>Demenzfreundliche Abschiede</h3>
+          <p class="sub">Auch Menschen mit Demenz brauchen einen Abschied, der sie erreicht und ihnen Sicherheit gibt.</p>
+          <p>Mit einfachen Worten, vertrauter Musik, Symbolen und kleinen Ritualen können besondere
+             Momente von Nähe entstehen. Dabei steht für mich nicht die Erkrankung, sondern der Mensch
+             mit seiner Geschichte und seinen Gefühlen im Mittelpunkt.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <blockquote>Manchmal beginnt Hoffnung nicht mit großen Worten, sondern mit einem Menschen,
+        der einfach da ist.</blockquote>
+    </div>
+  </section>
+
+  <section class="soft" id="ueber-mich">
+    <div class="wrap">
+      <div class="about">
+        <img src="bilder/susanne-schnepel.jpg" width="800" height="1108"
+             alt="Susanne Schnepel, lächelnd, in dunkelgrünem Blazer und weißer Bluse">
+        <div>
+          <h2>Hallo, ich bin Susanne</h2>
+          <div class="lead">
+            <p>Ich bin Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin.
+               Mit viel Herz begleite ich Menschen auf ihrem letzten Weg und stehe ihren
+               Angehörigen in der Zeit des Abschieds zur Seite.</p>
+            <p>Durch meine Arbeit mit älteren, schwer erkrankten und demenziell veränderten
+               Menschen weiß ich: Es braucht nicht immer viele Worte. Manchmal schenken eine
+               haltende Hand, vertraute Musik, ein kleines Ritual oder stilles Dasein die
+               größte Geborgenheit.</p>
+            <p>Mein Herzenswunsch ist es, Menschen einen liebevollen und würdevollen Abschied
+               zu ermöglichen und Angehörige in dieser besonderen Zeit nicht allein zu lassen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="begleiter">
     <div class="wrap">
       <h2>Meine Begleiter</h2>
       <p class="lead">Drei Begleiter für schwere Zeiten – liebevoll geschrieben, fachlich durchgesehen
@@ -154,40 +248,52 @@
     </div>
   </section>
 
-  <section id="ueber-mich">
+  <section class="soft" id="stimmen">
     <div class="wrap">
-      <div class="about">
-        <img src="bilder/susanne-schnepel.jpg" width="800" height="1108"
-             alt="Susanne Schnepel, lächelnd, in dunkelgrünem Blazer und weißer Bluse">
-        <div>
-          <h2>Hallo, ich bin Susanne</h2>
-          <div class="lead">
-            <p>Ich bin Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin.
-               Mit viel Herz begleite ich Menschen auf ihrem letzten Weg und stehe ihren
-               Angehörigen in der Zeit des Abschieds zur Seite.</p>
-            <p>Durch meine Arbeit mit älteren, schwer erkrankten und demenziell veränderten
-               Menschen weiß ich: Es braucht nicht immer viele Worte. Manchmal schenken eine
-               haltende Hand, vertraute Musik, ein kleines Ritual oder stilles Dasein die
-               größte Geborgenheit.</p>
-            <p>Mein Herzenswunsch ist es, Menschen einen liebevollen und würdevollen Abschied
-               zu ermöglichen und Angehörige in dieser besonderen Zeit nicht allein zu lassen.</p>
-          </div>
-        </div>
+      <h2>Stimmen von Angehörigen</h2>
+      <div class="stimmen">
+        <figure class="stimme">
+          <p>„Frau Schnepel begleitet meine Mutter nun seit drei Jahren. Erst zu Hause, als es alleine
+             nicht mehr ging, dann auch beim Übergang in die nun stationäre Betreuung. Sie ist da, wenn
+             ich als Tochter nicht da sein kann. Sie beruhigt und unterstützt meine Mutter mit echter
+             Liebe. Sie nimmt sich Zeit für Dinge, die im Alltag oft zu kurz kommen. Frau Schnepel ist
+             wie Familie. Von Herzen: Danke.“</p>
+          <figcaption>– Mirjam B., Tochter</figcaption>
+        </figure>
+
+        <figure class="stimme">
+          <p>„Wir sind sehr dankbar für diese einfühlsame Begleitung. Mit viel Empathie, Wertschätzung
+             und Ruhe trägst du uns durch diese schwere Zeit. Besonders berührt hat uns dein liebevoller
+             Umgang mit unserer Mutter und deine klare, lösungsorientierte Unterstützung. Es ist gut zu
+             wissen, dass du an unserer Seite bist.“</p>
+          <figcaption>– Rückmeldung einer Angehörigen</figcaption>
+        </figure>
+
+        <figure class="stimme">
+          <p>„In einer der schwersten Zeiten unseres Lebens hat Frau Schnepel für uns die richtigen Worte
+             gefunden. Ihre Rede war persönlich, warm und voller Achtung vor dem Leben unseres
+             Angehörigen. Wir fühlten uns gesehen, verstanden und getragen. Viele Gäste sagten uns
+             später, wie berührend und wohltuend dieser Abschied war. Dafür sind wir von Herzen dankbar.“</p>
+          <figcaption>– Angehörige nach einer Trauerfeier</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="soft">
+  <section id="kontakt" class="kontakt">
     <div class="wrap">
-      <blockquote>Sie müssen nicht immer stark sein. Sie müssen Ihre Trauer nicht erklären.
-        Sie müssen diesen Weg nicht allein gehen.</blockquote>
+      <h2>Kontaktieren Sie mich</h2>
+      <p><strong>Susanne Schnepel</strong><br>
+         Trauerrednerin · Sterbe- und Trauerbegleiterin<br>
+         37186 Moringen</p>
+      <p><a class="tel" href="tel:+491785309989">0178 5309989</a></p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Susanne Schnepel · Sterbe- und Trauerbegleitung</span>
+    <span>© 2026 Susanne Schnepel · Trauerrednerin · Sterbe- und Trauerbegleiterin</span>
     <span><a href="impressum.html">Impressum &amp; Datenschutz</a></span>
   </div>
 </footer>
