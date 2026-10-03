@@ -82,6 +82,12 @@
       max-width: 640px; margin: 0 auto; text-align: center; color: var(--accent-dark);
     }
 
+    .about { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: start; }
+    .about img { width: 100%; max-width: 360px; height: auto; border-radius: 14px; display: block; }
+    @media (min-width: 760px) {
+      .about { grid-template-columns: 320px 1fr; gap: 48px; }
+    }
+
     footer { border-top: 1px solid var(--line); padding: 32px 0; font-size: 0.9rem; color: var(--muted); }
     footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
   </style>
@@ -150,17 +156,23 @@
 
   <section id="ueber-mich">
     <div class="wrap">
-      <h2>Hallo, ich bin Susanne</h2>
-      <div class="lead">
-        <p>Ich bin Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin.
-           Mit viel Herz begleite ich Menschen auf ihrem letzten Weg und stehe ihren
-           Angehörigen in der Zeit des Abschieds zur Seite.</p>
-        <p>Durch meine Arbeit mit älteren, schwer erkrankten und demenziell veränderten
-           Menschen weiß ich: Es braucht nicht immer viele Worte. Manchmal schenken eine
-           haltende Hand, vertraute Musik, ein kleines Ritual oder stilles Dasein die
-           größte Geborgenheit.</p>
-        <p>Mein Herzenswunsch ist es, Menschen einen liebevollen und würdevollen Abschied
-           zu ermöglichen und Angehörige in dieser besonderen Zeit nicht allein zu lassen.</p>
+      <div class="about">
+        <img src="bilder/susanne-schnepel.jpg" width="800" height="1108"
+             alt="Susanne Schnepel, lächelnd, in dunkelgrünem Blazer und weißer Bluse">
+        <div>
+          <h2>Hallo, ich bin Susanne</h2>
+          <div class="lead">
+            <p>Ich bin Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin.
+               Mit viel Herz begleite ich Menschen auf ihrem letzten Weg und stehe ihren
+               Angehörigen in der Zeit des Abschieds zur Seite.</p>
+            <p>Durch meine Arbeit mit älteren, schwer erkrankten und demenziell veränderten
+               Menschen weiß ich: Es braucht nicht immer viele Worte. Manchmal schenken eine
+               haltende Hand, vertraute Musik, ein kleines Ritual oder stilles Dasein die
+               größte Geborgenheit.</p>
+            <p>Mein Herzenswunsch ist es, Menschen einen liebevollen und würdevollen Abschied
+               zu ermöglichen und Angehörige in dieser besonderen Zeit nicht allein zu lassen.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
