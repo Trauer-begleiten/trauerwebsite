@@ -3,121 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Susanne Schnepel – Trauerrednerin, Sterbe- und Trauerbegleitung in Moringen</title>
-  <meta name="description" content="Susanne Schnepel – Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin. Sterbebegleitung, Trauerbegleitung, persönliche Trauerreden und demenzfreundliche Abschiede in Moringen.">
-  <style>
-    :root {
-      --bg: #faf7f2;
-      --bg-soft: #f1ebe1;
-      --card: #ffffff;
-      --text: #3b3a36;
-      --muted: #6f6a60;
-      --accent: #7a8b6f;
-      --accent-dark: #5c6b53;
-      --line: #e3dccf;
-      --serif: Georgia, "Times New Roman", serif;
-      --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      font-size: 18px;
-      line-height: 1.7;
-    }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-    a { color: var(--accent-dark); }
-
-    header.top {
-      border-bottom: 1px solid var(--line);
-      background: var(--bg);
-    }
-    header.top .wrap {
-      display: flex; flex-wrap: wrap; gap: 8px 24px;
-      align-items: center; justify-content: space-between;
-      padding-top: 16px; padding-bottom: 16px;
-    }
-    .brand { font-family: var(--serif); font-size: 1.25rem; text-decoration: none; color: var(--text); }
-    nav a { margin-right: 18px; text-decoration: none; color: var(--muted); font-size: 0.95rem; }
-    nav a:last-child { margin-right: 0; }
-    nav a:hover { color: var(--accent-dark); }
-
-    .hero { padding: 72px 0 64px; text-align: center; }
-    .hero h1 {
-      font-family: var(--serif); font-weight: normal;
-      font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.2; margin: 0 0 16px;
-    }
-    .hero p { max-width: 620px; margin: 0 auto 28px; color: var(--muted); }
-    .button {
-      display: inline-block; padding: 12px 26px; border-radius: 999px;
-      background: var(--accent); color: #fff; text-decoration: none;
-    }
-    .button:hover { background: var(--accent-dark); }
-
-    section { padding: 56px 0; }
-    section.soft { background: var(--bg-soft); }
-    h2 { font-family: var(--serif); font-weight: normal; font-size: 1.9rem; margin: 0 0 20px; }
-    .lead { max-width: 680px; }
-
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
-      padding: 28px 24px; display: flex; flex-direction: column;
-    }
-    .badge {
-      align-self: flex-start; font-size: 0.8rem; letter-spacing: 0.04em;
-      background: var(--bg-soft); color: var(--accent-dark);
-      padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
-    }
-    .card h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-height: 1.3; margin: 0 0 4px; }
-    .card .sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 14px; }
-    .card p { margin: 0 0 12px; }
-    .card .for { margin-top: auto; font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
-
-    blockquote {
-      font-family: var(--serif); font-size: 1.3rem; font-style: italic;
-      max-width: 640px; margin: 0 auto; text-align: center; color: var(--accent-dark);
-    }
-
-    .about { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: start; }
-    .about img { width: 100%; max-width: 360px; height: auto; border-radius: 14px; display: block; }
-    @media (min-width: 760px) {
-      .about { grid-template-columns: 320px 1fr; gap: 48px; }
-    }
-
-    .eyebrow { font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-dark); margin: 0 0 16px; }
-    .hero .strong { color: var(--text); font-family: var(--serif); font-size: 1.3rem; font-style: italic; }
-    .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-    .button.light { background: transparent; color: var(--accent-dark); border: 1px solid var(--accent); }
-    .button.light:hover { background: var(--card); }
-
-    @media (min-width: 760px) { .cards.zwei { grid-template-columns: 1fr 1fr; } }
-
-    .stimmen { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 32px; }
-    .stimme { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; }
-    .stimme p { margin: 0 0 14px; font-style: italic; }
-    .stimme figcaption { font-size: 0.9rem; color: var(--muted); }
-
-    .kontakt p { margin: 0 0 8px; }
-    .kontakt .tel { font-size: 1.3rem; font-family: var(--serif); text-decoration: none; }
-
-    footer { border-top: 1px solid var(--line); padding: 32px 0; font-size: 0.9rem; color: var(--muted); }
-    footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
-  </style>
+  <title>Susanne Schnepel – Sterbe- und Trauerbegleitung, Trauerreden in Moringen</title>
+  <meta name="description" content="Susanne Schnepel – Sterbebegleitung, Trauerbegleitung, persönliche Trauerreden und demenzfreundliche Abschiede in Moringen, Northeim, Göttingen und Umgebung.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#">Susanne Schnepel</a>
+    <a class="brand" href="index.html">Susanne Schnepel<small>Sterbe- und Trauerbegleitung · Trauerreden</small></a>
     <nav>
-      <a href="#begleitung">Begleitung</a>
-      <a href="#ueber-mich">Über mich</a>
-      <a href="#begleiter">Begleiter</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="index.html" aria-current="page">Start</a>
+      <a href="trauer-und-sterbebegleitung.html">Begleitung</a>
+      <a href="trauerrednerin.html">Trauerreden</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="preisgestaltung.html">Preise</a>
+      <a href="fuer-einrichtungen.html">Für Einrichtungen</a>
+      <a href="index.html#kontakt">Kontakt</a>
     </nav>
   </div>
 </header>
@@ -149,6 +51,7 @@
           <p class="sub">Da sein, zuhören und Halt schenken in der letzten Lebensphase.</p>
           <p>In der Zeit des Abschieds begleite ich Sterbende und ihre Angehörigen mit Achtsamkeit,
              Ruhe und menschlicher Nähe.</p>
+          <a class="more" href="trauer-und-sterbebegleitung.html#lebensende">Mehr erfahren →</a>
         </article>
 
         <article class="card">
@@ -156,15 +59,16 @@
           <p class="sub">Einzelgespräche, Orientierung und liebevolle Unterstützung auf dem Weg durch die Trauer.</p>
           <p>Auch nach dem Verlust bin ich da – mit Zeit für Gespräche, Orientierung und einem
              geschützten Raum für Ihre Trauer.</p>
+          <a class="more" href="trauer-und-sterbebegleitung.html#trauer">Mehr erfahren →</a>
         </article>
 
         <article class="card">
           <h3>Trauerreden, die von Herzen kommen</h3>
           <p class="sub">Persönliche und würdevolle Abschiedsreden, die das Leben eines Menschen in den Mittelpunkt stellen.</p>
           <p>In einem persönlichen Gespräch erzählen Sie mir von dem Menschen, den Sie verabschieden.
-             Ich höre zu – mit Zeit, Ruhe und einem offenen Ohr. Aus Ihren Erinnerungen entsteht eine
-             persönliche Trauerrede, die das Leben und die Einzigartigkeit dieses Menschen in den
-             Mittelpunkt stellt und einen würdevollen Abschied ermöglicht.</p>
+             Aus Ihren Erinnerungen entsteht eine persönliche Trauerrede, die einen würdevollen
+             Abschied ermöglicht.</p>
+          <a class="more" href="trauerrednerin.html">Mehr erfahren →</a>
         </article>
 
         <article class="card">
@@ -173,6 +77,22 @@
           <p>Mit einfachen Worten, vertrauter Musik, Symbolen und kleinen Ritualen können besondere
              Momente von Nähe entstehen. Dabei steht für mich nicht die Erkrankung, sondern der Mensch
              mit seiner Geschichte und seinen Gefühlen im Mittelpunkt.</p>
+        </article>
+
+        <article class="card">
+          <h3>Begleitung für Angehörige</h3>
+          <p class="sub">Auch wer begleitet, braucht manchmal jemanden an seiner Seite.</p>
+          <p>Ich begleite Sie mit Ruhe, Zeit und einem offenen Ohr. Sie dürfen erzählen, fragen,
+             schweigen oder einfach einen Moment zur Ruhe kommen.</p>
+          <a class="more" href="trauer-und-sterbebegleitung.html#angehoerige">Mehr erfahren →</a>
+        </article>
+
+        <article class="card">
+          <h3>Abschied planen</h3>
+          <p class="sub">Vorsorge gibt Sicherheit – für Sie selbst und für die Menschen, die Ihnen nahestehen.</p>
+          <p>Ich begleite Sie dabei, Ihre Gedanken zu sortieren, Wünsche auszusprechen und das
+             festzuhalten, was Ihnen persönlich am Herzen liegt.</p>
+          <a class="more" href="trauer-und-sterbebegleitung.html#vorsorge">Mehr erfahren →</a>
         </article>
       </div>
     </div>
@@ -193,15 +113,13 @@
         <div>
           <h2>Hallo, ich bin Susanne</h2>
           <div class="lead">
-            <p>Ich bin Sterbe- und Trauerbegleiterin und zertifizierte Trauerrednerin.
-               Mit viel Herz begleite ich Menschen auf ihrem letzten Weg und stehe ihren
-               Angehörigen in der Zeit des Abschieds zur Seite.</p>
-            <p>Durch meine Arbeit mit älteren, schwer erkrankten und demenziell veränderten
-               Menschen weiß ich: Es braucht nicht immer viele Worte. Manchmal schenken eine
-               haltende Hand, vertraute Musik, ein kleines Ritual oder stilles Dasein die
-               größte Geborgenheit.</p>
-            <p>Mein Herzenswunsch ist es, Menschen einen liebevollen und würdevollen Abschied
-               zu ermöglichen und Angehörige in dieser besonderen Zeit nicht allein zu lassen.</p>
+            <p>Seit vielen Jahren begleite ich Menschen in unterschiedlichen Lebenssituationen.
+               Besonders die Begegnungen mit Menschen am Lebensende, mit Trauernden und mit
+               Menschen mit Demenz haben mich geprägt.</p>
+            <p>Dabei habe ich immer wieder erfahren, wie wichtig es gerade in schweren Zeiten ist,
+               gesehen und angenommen zu werden.</p>
+            <p class="strong" style="font-family:var(--serif);font-style:italic;font-size:1.2rem">Ich bin wertvoll. Ich werde gesehen. Ich bin nicht allein.</p>
+            <p><a class="more" href="ueber-mich.html">Mehr über mich →</a></p>
           </div>
         </div>
       </div>
@@ -210,41 +128,44 @@
 
   <section id="begleiter">
     <div class="wrap">
-      <h2>Meine Begleiter</h2>
-      <p class="lead">Drei Begleiter für schwere Zeiten – liebevoll geschrieben, fachlich durchgesehen
-        und zum Lesen, Innehalten und Hineinschreiben gedacht. Sie erscheinen in Kürze.</p>
+      <h2>Begleiter für besondere Lebenszeiten</h2>
+      <p class="lead">Aus meiner Erfahrung in der Begleitung von Menschen und Angehörigen sind persönliche
+        Begleiter entstanden. Sie möchten verständliche Informationen geben, Orientierung schaffen und in
+        unsicheren Momenten ein wenig Halt schenken. Sie erscheinen in Kürze.</p>
 
       <div class="cards">
         <article class="card">
           <span class="badge">Erscheint bald</span>
-          <h3>Begleiter durch die Zeit der Trauer</h3>
-          <p class="sub">Zwölf Wegorte für schwere und leise Tage</p>
-          <p>Ein geschützter Raum für Tränen und Erinnerungen, für Fragen ohne Antwort,
-             für Sehnsucht, Stille und vorsichtige Lichtblicke. Sie müssen nichts leisten –
-             für heute genügt der nächste kleine Schritt.</p>
-          <p class="for">Für Menschen, die einen geliebten Menschen verloren haben.</p>
-        </article>
-
-        <article class="card">
-          <span class="badge">Erscheint bald</span>
           <h3>Die letzten Wochen und Tage</h3>
-          <p class="sub">Eine liebevolle Hilfe für Angehörige in der Zeit des Sterbens</p>
-          <p>Verständlich erklärt, welche Veränderungen in der letzten Lebensphase möglich sind
-             und wie Sie Ihren geliebten Menschen begleiten können. Sie müssen nicht alles wissen
-             und nicht alles richtig machen.</p>
+          <p class="sub">Ein Begleiter durch die Zeit des Abschieds</p>
+          <p>Behutsame Informationen und praktische Anregungen für Angehörige, die einen Menschen
+             auf seinem letzten Lebensweg begleiten.</p>
           <p class="for">Für Angehörige, die einen sterbenden Menschen begleiten.</p>
         </article>
 
         <article class="card">
           <span class="badge">Erscheint bald</span>
+          <h3>Begleiter durch die Zeit der Trauer</h3>
+          <p class="sub">Zwölf Wegorte für schwere und leise Tage</p>
+          <p>Gedanken, Impulse und kleine Übungen, die dabei unterstützen können, der eigenen Trauer
+             Raum zu geben und Schritt für Schritt den eigenen Weg zu finden.</p>
+          <p class="for">Für Menschen, die einen geliebten Menschen verloren haben.</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Erscheint bald</span>
           <h3>Der Mensch bleibt</h3>
-          <p class="sub">Wegbegleiter und Arbeitsbuch für Angehörige von Menschen mit Demenz</p>
-          <p>Erinnerungen können verblassen, Worte können fehlen. Das Bedürfnis nach Liebe,
-             Würde, Sicherheit und Zugehörigkeit bleibt. Orientierung, praktische Ideen
-             und Raum für Ihre eigenen Erfahrungen.</p>
+          <p class="sub">Ein Begleiter für Angehörige von Menschen mit Demenz</p>
+          <p>Einfühlsame Erklärungen und praktische Anregungen, um Menschen mit Demenz besser zu
+             verstehen, ihre Gefühle wahrzunehmen und auch in schwierigen Momenten miteinander in
+             Verbindung zu bleiben.</p>
           <p class="for">Für Angehörige von Menschen mit Demenz.</p>
         </article>
       </div>
+
+      <p class="lead" style="margin-top:32px"><strong>Orientierung statt fertiger Antworten.</strong>
+        Diese Begleiter möchten nicht vorgeben, was richtig oder falsch ist. Manchmal hilft schon ein
+        wenig Wissen, um sich nicht mehr ganz so hilflos zu fühlen.</p>
     </div>
   </section>
 
@@ -283,17 +204,20 @@
   <section id="kontakt" class="kontakt">
     <div class="wrap">
       <h2>Kontaktieren Sie mich</h2>
+      <p class="lead">In einem unverbindlichen ersten Gespräch klären wir gemeinsam, was Ihnen wichtig ist.</p>
       <p><strong>Susanne Schnepel</strong><br>
          Trauerrednerin · Sterbe- und Trauerbegleiterin<br>
          37186 Moringen</p>
-      <p><a class="tel" href="tel:+491785309989">0178 5309989</a></p>
+      <p>Telefon: <a class="tel" href="tel:+491785309989">0178 5309989</a><br>
+         E-Mail: <a href="mailto:info@trauer-begleiten.com">info@trauer-begleiten.com</a></p>
+      <p class="hinweis">Ich bin im Raum Moringen, Northeim, Göttingen und Umgebung tätig.</p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Susanne Schnepel · Trauerrednerin · Sterbe- und Trauerbegleiterin</span>
+    <span>© 2026 Susanne Schnepel · Sterbe- und Trauerbegleitung · Trauerreden</span>
     <span><a href="impressum.html">Impressum &amp; Datenschutz</a></span>
   </div>
 </footer>
