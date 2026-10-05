@@ -208,3 +208,6 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 .merksatz .satz { font-family: var(--serif); font-style: italic; font-size: 2rem; color: var(--accent-dark); margin: 0 0 8px; }
 .frage { font-family: var(--serif); font-style: italic; color: var(--accent-dark); }
 .notizen.kurz span { height: 34px; }
+
+/* Lange Links (z. B. in der Datenschutzerklärung) am Handy umbrechen */
+.text a { overflow-wrap: anywhere; }
