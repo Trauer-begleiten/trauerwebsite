@@ -150,3 +150,64 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
   header.top .wrap { flex-wrap: wrap; }
   .js .brand { flex: 1 1 0; min-width: 0; }
 }
+
+/* Kostenloser Begleiter: Anmeldung */
+.angebot { display: grid; gap: 32px; align-items: start; }
+@media (min-width: 860px) { .angebot { grid-template-columns: 1fr 400px; gap: 48px; } }
+.haken { list-style: none; padding: 0; margin: 0 0 16px; }
+.haken li { position: relative; padding-left: 30px; margin-bottom: 10px; }
+.haken li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-dark); font-weight: 700; }
+.anmeldung { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; }
+.anmeldung h3 { margin: 0 0 16px; }
+.anmeldung label { display: block; font-size: 0.95rem; margin: 0 0 4px; }
+.anmeldung input[type="text"], .anmeldung input[type="email"] {
+  width: 100%; font: inherit; padding: 10px 14px; margin-bottom: 16px;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--bg);
+}
+.anmeldung input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.anmeldung .einwilligung { display: flex; gap: 10px; align-items: flex-start; font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin-bottom: 20px; }
+.anmeldung .einwilligung input { margin-top: 4px; flex: none; width: 18px; height: 18px; }
+.anmeldung .button { border: 0; font: inherit; cursor: pointer; width: 100%; }
+.anmeldung .hinweis { margin: 12px 0 0; text-align: center; }
+.versteckt { position: absolute; left: -9999px; }
+.teaser { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; margin-top: 32px; }
+.teaser h3 { margin: 0 0 8px; }
+
+/* Kostenloser Begleiter: Heft zum Ausdrucken */
+.heft .leiste { border-bottom: 1px solid var(--line); padding: 12px 0; }
+.heft .leiste .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+.heft .leiste .button { border: 0; font: inherit; cursor: pointer; }
+.heft main { padding-top: 40px; padding-bottom: 56px; }
+.heft h2 { margin-top: 48px; }
+.titelseite { text-align: center; padding: 48px 0; border-bottom: 1px solid var(--line); }
+.titelseite h1 { font-family: var(--serif); font-weight: normal; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.2; margin: 0 0 12px; }
+.titelseite .untertitel { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--accent-dark); margin: 0 0 32px; }
+.unterschrift { font-family: var(--serif); font-style: italic; }
+.checkliste { list-style: none; padding: 0 !important; }
+.checkliste li { position: relative; padding-left: 34px; margin-bottom: 12px !important; }
+.checkliste li::before { content: ""; position: absolute; left: 0; top: 5px; width: 18px; height: 18px; border: 2px solid var(--accent); border-radius: 4px; }
+.impulse li { margin-bottom: 14px !important; }
+.notizen span { display: block; height: 40px; border-bottom: 1px solid var(--line); }
+.abschluss { margin-top: 56px; background: var(--bg-soft); border-radius: 14px; padding: 8px 24px 24px; }
+.abschluss h2 { margin-top: 24px; }
+
+@media print {
+  .nicht-drucken { display: none !important; }
+  body { background: #fff; font-size: 11.5pt; line-height: 1.55; }
+  .heft main { padding: 0; }
+  .titelseite { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; border: 0; }
+  .titelseite + h2 { break-before: page; }
+  .heft h2 { break-after: avoid; margin-top: 28px; }
+  .checkliste li, .impulse li { break-inside: avoid; }
+  .abschluss { break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+  @page { margin: 18mm 16mm; }
+}
+.merksatz { margin: 48px 0 8px; background: var(--bg-soft); border-left: 4px solid var(--accent); border-radius: 0 14px 14px 0; padding: 20px 24px; break-inside: avoid; }
+.merksatz .eyebrow { margin: 0 0 4px; }
+.merksatz .satz { font-family: var(--serif); font-style: italic; font-size: 2rem; color: var(--accent-dark); margin: 0 0 8px; }
+.frage { font-family: var(--serif); font-style: italic; color: var(--accent-dark); }
+.notizen.kurz span { height: 34px; }
+
+/* Lange Links (z. B. in der Datenschutzerklärung) am Handy umbrechen */
+.text a { overflow-wrap: anywhere; }
