@@ -211,3 +211,23 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 
 /* Lange Links (z. B. in der Datenschutzerklärung) am Handy umbrechen */
 .text a { overflow-wrap: anywhere; }
+
+/* Ordner „Meine letzte Reise“: Felder zum Ausfüllen */
+.feld { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: flex-end; margin: 0 0 12px; }
+.feld span { flex: 1 1 200px; min-height: 1.7em; border-bottom: 1px solid var(--line); }
+.wahl { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 14px; padding: 0; list-style: none; }
+.wahl li { position: relative; padding-left: 26px; }
+.wahl li::before { content: ""; position: absolute; left: 0; top: 6px; width: 15px; height: 15px; border: 2px solid var(--accent); border-radius: 3px; }
+.ausfuellen { overflow-x: auto; margin: 0 0 16px; }
+.ausfuellen table { width: 100%; min-width: 480px; border-collapse: collapse; font-size: 0.9rem; }
+.ausfuellen th { text-align: left; font-weight: normal; color: var(--muted); font-size: 0.85rem; border-bottom: 2px solid var(--line); padding: 4px 8px; }
+.ausfuellen td { height: 2.2em; border-bottom: 1px solid var(--line); padding: 0 8px; }
+.teil { text-align: center; margin-top: 64px; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.teil h2 { margin: 0 0 8px !important; }
+.teil p { margin: 0; color: var(--muted); }
+.zuerst { border: 2px solid var(--accent); border-radius: 14px; padding: 8px 24px 16px; margin-top: 48px; }
+@media print {
+  .teil, .register { break-before: page; }
+  .zuerst { break-inside: avoid; }
+  .feld, .ausfuellen tr { break-inside: avoid; }
+}
