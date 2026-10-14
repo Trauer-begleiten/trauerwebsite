@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trauer-begleiten.com/sitemap.xml
