@@ -1,11 +1,11 @@
-# E-Mail an Einrichtungen – Begleiter & Vorträge
+# E-Mail an Einrichtungen – Begleiter & Gesprächsrunden
 
 **Empfänger:** Pflegeheime, Seniorenheime, ambulante Pflegedienste, Hospize, Tagespflegen, Beratungsstellen
-**Anhang:** `begleiter-kurzinfo.pdf` (1 Seite)
+**Anhang:** `begleiter-kurzinfo.pdf` (2 Seiten)
 
 ---
 
-**Betreff:** Begleitung bei Abschied, Trauer und Demenz – Unterstützung und Vortragsangebot für Ihre Einrichtung
+**Betreff:** Begleitung bei Abschied, Trauer und Demenz – Gesprächsrunden und Unterstützung für Ihre Einrichtung
 
 Sehr geehrte Damen und Herren,
 
@@ -23,11 +23,11 @@ Außerdem gibt es bereits den kostenlosen kleinen Begleiter **„Diagnose Demenz
 
 **Gern unterstütze ich auch Ihre Einrichtung:**
 
-- mit **Vorträgen und Gesprächsabenden** für Angehörige oder für Ihr Team – jeder Begleiter bietet dafür einen guten Einstieg ins Thema
+- mit **Gesprächsrunden** für Angehörige oder für Ihr Team (ca. 90 Minuten): verständliche Informationen, dann Zeit für Fragen und Austausch – jeder Begleiter bietet dafür einen guten Einstieg ins Thema
 - mit **persönlicher Sterbe- und Trauerbegleitung** für Bewohnerinnen und Bewohner, Patientinnen und Patienten sowie deren Angehörige
 - mit **Trauerreden und Abschiedsfeiern**, auch für Menschen mit Demenz verständlich gestaltet
 
-Inhalt, Umfang und Rahmen stimme ich immer individuell mit Ihnen ab. Im Anhang finden Sie eine kurze Übersicht.
+Inhalt, Umfang und Rahmen stimme ich immer individuell mit Ihnen ab. Im Anhang finden Sie eine kurze Übersicht – auf der zweiten Seite auch die Themen der Gesprächsrunden.
 
 Ich würde mich freuen, wenn wir in einem unverbindlichen Gespräch schauen, was zu Ihrer Einrichtung und den Menschen passt, die Sie begleiten. Gern rufe ich Sie in den nächsten Tagen einmal an – oder Sie melden sich einfach bei mir.
 
@@ -44,11 +44,11 @@ Web: https://trauer-begleiten.com/fuer-einrichtungen.html
 
 ## Kürzere Variante (z. B. für Kontaktformulare oder Folge-Mail)
 
-**Betreff:** Vortrag oder Gesprächsabend zu Sterben, Trauer und Demenz?
+**Betreff:** Gesprächsrunde zu Sterben, Trauer und Demenz in Ihrer Einrichtung?
 
 Sehr geehrte Damen und Herren,
 
-ich bin Sterbe- und Trauerbegleiterin im Raum Moringen, Northeim und Göttingen und biete Einrichtungen Vorträge, Gesprächsabende und persönliche Begleitung rund um Abschied, Trauer und Demenz an – für Angehörige ebenso wie für Teams.
+ich bin Sterbe- und Trauerbegleiterin im Raum Moringen, Northeim und Göttingen und biete Einrichtungen Gesprächsrunden (ca. 90 Minuten – Informationen, Austausch und Raum für Fragen) sowie persönliche Begleitung rund um Abschied, Trauer und Demenz an – für Angehörige ebenso wie für Teams.
 
 Als Einstieg dienen meine drei Begleiter „Die letzten Wochen und Tage“, „Begleiter durch die Zeit der Trauer“ und „Der Mensch bleibt“ (Demenz). Eine kurze Übersicht hänge ich Ihnen an.
 

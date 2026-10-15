@@ -12,6 +12,7 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: #fff; color: var(--text); font-family: var(--sans); font-size: 10.5pt; line-height: 1.5; }
   .seite { max-width: 178mm; margin: 0 auto; padding: 16px; }
+  .seite + .seite { break-before: page; }
   header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
   .name { font-family: var(--serif); font-size: 15pt; }
   .unter { color: var(--muted); font-size: 9pt; }
@@ -20,18 +21,24 @@
   p { margin: 0 0 8px; }
   .intro { color: var(--muted); }
   .begleiter { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
-  .b { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .b { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 10pt; }
   .b h3 { font-family: var(--serif); font-weight: normal; font-size: 12pt; margin: 0 0 2px; }
   .b .fuer { color: var(--accent-dark); font-size: 8.5pt; margin-bottom: 6px; }
-  .b .vortrag { border-top: 1px dashed var(--line); margin-top: 6px; padding-top: 6px; font-size: 9pt; }
-  .b .vortrag strong { color: var(--accent-dark); font-weight: 600; }
   .gratis { background: var(--soft); border-radius: 10px; padding: 8px 12px; margin-top: 10px; font-size: 9.5pt; }
   ul { margin: 4px 0 0; padding-left: 18px; }
   li { margin-bottom: 3px; }
+  .runde { border-left: 3px solid var(--accent); padding: 2px 0 2px 12px; margin: 12px 0; }
+  .runde h3 { font-family: var(--serif); font-weight: normal; font-size: 12.5pt; margin: 0 0 2px; }
+  .runde .fuer { color: var(--accent-dark); font-size: 9pt; margin-bottom: 4px; }
+  .runde ul { font-size: 10pt; }
+  .rahmen { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+  .kasten { background: var(--soft); border-radius: 10px; padding: 10px 12px; font-size: 10pt; }
+  .kasten h3 { font-family: var(--serif); font-weight: normal; font-size: 12pt; margin: 0 0 4px; }
+  .kasten ul { padding-left: 16px; }
   .kontakt { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 10pt; }
   .kontakt strong { color: var(--accent-dark); }
   .hinweis { color: var(--muted); font-size: 8.5pt; margin-top: 6px; }
-  @media (max-width: 640px) { .begleiter { grid-template-columns: 1fr; } header { display: block; } }
+  @media (max-width: 640px) { .begleiter, .rahmen { grid-template-columns: 1fr; } header { display: block; } }
 </style>
 </head>
 <body>
@@ -42,28 +49,25 @@
   </header>
 
   <h1>Begleiter für besondere Lebenszeiten</h1>
-  <p class="intro">Angehörige haben am Lebensende, in der Trauer und bei Demenz viele Fragen – und im Pflegealltag bleibt oft wenig Zeit für Antworten.
-    Meine Begleiter geben verständliche Informationen, Orientierung und ein wenig Halt. Sie eignen sich zum Weitergeben an Angehörige
-    und als Einstieg für Vorträge und Gesprächsabende in Ihrer Einrichtung.</p>
+  <p class="intro">Angehörige haben am Lebensende, in der Trauer und bei Demenz viele Fragen – und im Pflegealltag bleibt oft wenig Zeit,
+    sie in Ruhe zu beantworten. Aus meiner Erfahrung in der Begleitung von Menschen und ihren Familien sind deshalb persönliche
+    Begleiter entstanden. Sie geben verständliche Informationen, Orientierung und in unsicheren Momenten ein wenig Halt.</p>
 
   <div class="begleiter">
     <div class="b">
       <h3>Die letzten Wochen und Tage</h3>
       <div class="fuer">Für Angehörige, die einen sterbenden Menschen begleiten</div>
       <p>Behutsame Informationen und praktische Anregungen für die Zeit des Abschieds.</p>
-      <div class="vortrag"><strong>Vortrag:</strong> Was am Lebensende geschieht – und wie Angehörige da sein können</div>
     </div>
     <div class="b">
       <h3>Durch die Zeit der Trauer</h3>
       <div class="fuer">Für Menschen, die einen geliebten Menschen verloren haben</div>
       <p>Zwölf Wegorte mit Gedanken, Impulsen und kleinen Übungen für schwere und leise Tage.</p>
-      <div class="vortrag"><strong>Vortrag:</strong> Trauer hat viele Wege – wie wir Trauernden begegnen können</div>
     </div>
     <div class="b">
       <h3>Der Mensch bleibt</h3>
       <div class="fuer">Für Angehörige von Menschen mit Demenz</div>
-      <p>Menschen mit Demenz besser verstehen, Gefühle wahrnehmen und in Verbindung bleiben.</p>
-      <div class="vortrag"><strong>Vortrag:</strong> Demenz verstehen – auch Abschied und Verlust gemeinsam tragen</div>
+      <p>Menschen mit Demenz besser verstehen, ihre Gefühle wahrnehmen und in Verbindung bleiben.</p>
     </div>
   </div>
   <div class="gratis"><strong>Schon jetzt kostenlos:</strong> der kleine Begleiter „Diagnose Demenz – was jetzt?“ – gern zum Weitergeben an Angehörige:
@@ -72,18 +76,90 @@
 
   <h2>So kann ich Ihre Einrichtung unterstützen</h2>
   <ul>
-    <li><strong>Vorträge &amp; Impulse</strong> für Angehörige oder Mitarbeitende – verständlich und lebensnah</li>
-    <li><strong>Angehörigen- und Gesprächsabende</strong> – ein geschützter Rahmen für Austausch und Fragen</li>
-    <li><strong>Sterbe- und Trauerbegleitung</strong> für Bewohnerinnen, Bewohner, Patientinnen, Patienten und ihre Familien</li>
-    <li><strong>Trauerreden &amp; Abschiedsfeiern</strong> – auch für Menschen mit Demenz zugänglich gestaltet</li>
+    <li><strong>Gesprächsrunden</strong> für Angehörige oder Mitarbeitende – Informationen, Austausch und Raum für Fragen (siehe Rückseite)</li>
+    <li><strong>Sterbe- und Trauerbegleitung</strong> für Bewohnerinnen, Bewohner, Patientinnen, Patienten und ihre Familien –
+      mit Zeit zum Zuhören, für Gespräche und für Stille</li>
+    <li><strong>Begleitung für Angehörige</strong> – auch über den Abschied hinaus</li>
+    <li><strong>Trauerreden &amp; Abschiedsfeiern</strong> – persönlich, konfessionsunabhängig und auch für Menschen mit Demenz
+      zugänglich gestaltet</li>
   </ul>
-  <p style="margin-top:8px">Inhalt, Umfang und Rahmen stimme ich individuell mit Ihnen ab; das Honorar wird vorab vereinbart.
-    Ich freue mich auf ein unverbindliches Gespräch.</p>
+  <p style="margin-top:8px">Meine Arbeit verstehe ich als Ergänzung zu Ihrer Pflege und Betreuung – achtsam, verlässlich
+    und in enger Absprache mit Ihnen und Ihrem Team.</p>
 
   <div class="kontakt">
     <span><strong>Telefon / WhatsApp</strong> 0178 5309989</span>
     <span><strong>E-Mail</strong> info@trauer-begleiten.com</span>
     <span><strong>Web</strong> trauer-begleiten.com</span>
+  </div>
+</div>
+
+<div class="seite">
+  <header>
+    <div><div class="name">Susanne Schnepel</div><div class="unter">Sterbe- und Trauerbegleitung · Trauerreden</div></div>
+    <div class="unter">Moringen · Northeim · Göttingen und Umgebung</div>
+  </header>
+
+  <h1>Ins Gespräch kommen</h1>
+  <p class="intro">Gesprächsrunden für Angehörige und Teams: Ich gebe verständliche Informationen – und dann ist Zeit für Fragen,
+    für Austausch und für das, was die Menschen gerade bewegt. Jeder Begleiter bietet dafür einen guten Einstieg.</p>
+
+  <div class="runde">
+    <h3>Die letzten Wochen und Tage</h3>
+    <div class="fuer">Für Angehörige von Bewohnerinnen und Bewohnern, Patientinnen und Patienten · auch für Teams</div>
+    <ul>
+      <li>Was in der letzten Lebenszeit geschehen kann – verständlich erklärt</li>
+      <li>Wie Angehörige da sein können, auch wenn Worte fehlen</li>
+      <li>Was entlastet: kleine Gesten, Rituale, gute Absprachen mit der Pflege</li>
+    </ul>
+  </div>
+
+  <div class="runde">
+    <h3>Wenn Trauer da ist</h3>
+    <div class="fuer">Für Trauernde und Angehörige · auch für Teams, die selbst Abschiede erleben</div>
+    <ul>
+      <li>Trauer hat viele Wege – und keinen „richtigen“</li>
+      <li>Was in schweren und leisen Tagen helfen kann</li>
+      <li>Wie wir trauernden Menschen gut begegnen können</li>
+    </ul>
+  </div>
+
+  <div class="runde">
+    <h3>Der Mensch bleibt – Demenz verstehen</h3>
+    <div class="fuer">Für Angehörige von Menschen mit Demenz · auch für Teams</div>
+    <ul>
+      <li>Menschen mit Demenz besser verstehen und ihre Gefühle wahrnehmen</li>
+      <li>In Verbindung bleiben – auch in schwierigen Momenten</li>
+      <li>Abschied und Verlust, wenn ein Mensch mit Demenz betroffen ist</li>
+    </ul>
+  </div>
+
+  <div class="rahmen">
+    <div class="kasten">
+      <h3>Ablauf</h3>
+      <ul>
+        <li>Ankommen und kurze Einführung ins Thema</li>
+        <li>Informationen und Anregungen aus dem jeweiligen Begleiter</li>
+        <li>Fragen, Austausch und Gespräch</li>
+      </ul>
+    </div>
+    <div class="kasten">
+      <h3>Rahmen</h3>
+      <ul>
+        <li>Dauer: ca. 90 Minuten</li>
+        <li>In Ihrer Einrichtung, zu einer Zeit, die zu Ihnen passt</li>
+        <li>Für Angehörige, für Ihr Team oder für beide</li>
+        <li>Honorar nach Absprache – vorab vereinbart</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top:14px">Gern schauen wir gemeinsam in einem unverbindlichen Gespräch, welches Thema und welcher Rahmen
+    zu Ihrer Einrichtung und den Menschen passen, die Sie begleiten.</p>
+
+  <div class="kontakt">
+    <span><strong>Telefon / WhatsApp</strong> 0178 5309989</span>
+    <span><strong>E-Mail</strong> info@trauer-begleiten.com</span>
+    <span><strong>Web</strong> trauer-begleiten.com/fuer-einrichtungen.html</span>
   </div>
 </div>
 </body>
