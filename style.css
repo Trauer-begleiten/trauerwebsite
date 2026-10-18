@@ -211,3 +211,41 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 
 /* Lange Links (z. B. in der Datenschutzerklärung) am Handy umbrechen */
 .text a { overflow-wrap: anywhere; }
+
+/* Ordner „Meine letzte Reise“: Felder zum Ausfüllen */
+.feld { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: flex-end; margin: 0 0 12px; }
+.feld span { flex: 1 1 200px; min-height: 1.7em; border-bottom: 1px solid var(--line); }
+.wahl { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 14px; padding: 0; list-style: none; }
+.wahl li { position: relative; padding-left: 26px; }
+.wahl li::before { content: ""; position: absolute; left: 0; top: 6px; width: 15px; height: 15px; border: 2px solid var(--accent); border-radius: 3px; }
+.ausfuellen { overflow-x: auto; margin: 0 0 16px; }
+.ausfuellen table { width: 100%; min-width: 480px; border-collapse: collapse; font-size: 0.9rem; }
+.ausfuellen th { text-align: left; font-weight: normal; color: var(--muted); font-size: 0.85rem; border-bottom: 2px solid var(--line); padding: 4px 8px; }
+.ausfuellen td { height: 2.2em; border-bottom: 1px solid var(--line); padding: 0 8px; }
+.teil { text-align: center; margin-top: 64px; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.teil h2 { margin: 0 0 8px !important; }
+.teil p { margin: 0; color: var(--muted); }
+.zuerst { border: 2px solid var(--accent); border-radius: 14px; padding: 8px 24px 16px; margin-top: 48px; }
+@media print {
+  .teil, .register { break-before: page; }
+  .zuerst { break-inside: avoid; }
+  .feld, .ausfuellen tr { break-inside: avoid; }
+}
+/* Begleiter-Seite */
+.produkte { display: grid; gap: 40px; }
+.produkt { display: grid; gap: 24px; align-items: start; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; }
+.produkt img { width: 100%; max-width: 220px; height: auto; border-radius: 6px; box-shadow: 0 8px 22px -12px rgba(0,0,0,0.35); }
+.produkt h2 { margin: 0 0 4px; font-size: 1.6rem; }
+.produkt .eyebrow { margin: 0 0 6px; }
+.produkt .sub { font-family: var(--serif); font-style: italic; color: var(--muted); margin: 0 0 12px; }
+.produkt .for { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+@media (min-width: 760px) { .produkt { grid-template-columns: 220px 1fr; gap: 36px; padding: 32px; } }
+.preise { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.preise strong { white-space: nowrap; margin-left: 6px; }
+.paket { display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between; }
+.paket h2 { margin: 0 0 6px; font-size: 1.5rem; }
+.paket p { margin: 0; }
+.schritte { padding-left: 1.3em; margin: 0 0 24px; }
+.schritte li { margin-bottom: 8px; }
+.zitat { font-family: var(--serif); font-style: italic; color: var(--accent-dark) !important; font-size: 1.15rem; }
+.card .cover { width: 100%; max-width: 180px; height: auto; border-radius: 6px; margin: 0 auto 16px; display: block; box-shadow: 0 8px 20px -12px rgba(0,0,0,0.35); }
