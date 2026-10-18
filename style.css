@@ -231,3 +231,21 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
   .zuerst { break-inside: avoid; }
   .feld, .ausfuellen tr { break-inside: avoid; }
 }
+/* Begleiter-Seite */
+.produkte { display: grid; gap: 40px; }
+.produkt { display: grid; gap: 24px; align-items: start; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; }
+.produkt img { width: 100%; max-width: 220px; height: auto; border-radius: 6px; box-shadow: 0 8px 22px -12px rgba(0,0,0,0.35); }
+.produkt h2 { margin: 0 0 4px; font-size: 1.6rem; }
+.produkt .eyebrow { margin: 0 0 6px; }
+.produkt .sub { font-family: var(--serif); font-style: italic; color: var(--muted); margin: 0 0 12px; }
+.produkt .for { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+@media (min-width: 760px) { .produkt { grid-template-columns: 220px 1fr; gap: 36px; padding: 32px; } }
+.preise { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.preise strong { white-space: nowrap; margin-left: 6px; }
+.paket { display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between; }
+.paket h2 { margin: 0 0 6px; font-size: 1.5rem; }
+.paket p { margin: 0; }
+.schritte { padding-left: 1.3em; margin: 0 0 24px; }
+.schritte li { margin-bottom: 8px; }
+.zitat { font-family: var(--serif); font-style: italic; color: var(--accent-dark) !important; font-size: 1.15rem; }
+.card .cover { width: 100%; max-width: 180px; height: auto; border-radius: 6px; margin: 0 auto 16px; display: block; box-shadow: 0 8px 20px -12px rgba(0,0,0,0.35); }
