@@ -249,3 +249,13 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 .schritte li { margin-bottom: 8px; }
 .zitat { font-family: var(--serif); font-style: italic; color: var(--accent-dark) !important; font-size: 1.15rem; }
 .card .cover { width: 100%; max-width: 180px; height: auto; border-radius: 6px; margin: 0 auto 16px; display: block; box-shadow: 0 8px 20px -12px rgba(0,0,0,0.35); }
+
+/* Startseite: Kasten „Im Trauerfall“ */
+.trauerfall-bereich { padding: 0 0 48px; }
+.trauerfall {
+  background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--accent);
+  border-radius: 14px; padding: 28px 24px; max-width: 760px;
+}
+.trauerfall h2 { font-size: 1.6rem; margin: 0 0 12px; }
+.trauerfall p { margin: 0 0 18px; }
+.trauerfall .buttons { justify-content: flex-start; }
