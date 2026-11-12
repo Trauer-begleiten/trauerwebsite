@@ -259,3 +259,11 @@ h3 { font-family: var(--serif); font-weight: normal; font-size: 1.35rem; line-he
 .trauerfall h2 { font-size: 1.6rem; margin: 0 0 12px; }
 .trauerfall p { margin: 0 0 18px; }
 .trauerfall .buttons { justify-content: flex-start; }
+
+/* Seite „Abschied und Demenz“: Geschichte im Kasten */
+.geschichte {
+  background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--accent);
+  border-radius: 14px; padding: 28px 24px; margin: 24px 0;
+}
+.geschichte h3 { margin-top: 0; }
+.geschichte p:last-child { margin-bottom: 0; }
